@@ -1,11 +1,32 @@
 ## Docker commands used to build the application 
 # TODO: insert the docker build command
+docker build -t techtrends .
 
 ## Docker commands used to run the application
 # TODO: insert the docker run command
+docker run -d -p 7111:3111 techtrends
 
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
+docker logs adoring_elgamal
 
 ## Logs from the container running the TechTrends application
 # TODO: paste logs from the Docker container 
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug:2022-09-27 16:22:00,388:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug:2022-09-27 16:22:00,388:  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:app:2022-09-27 16:22:32,119: Test title is created
+INFO:werkzeug:2022-09-27 16:22:32,121: 172.17.0.1 - - [27/Sep/2022 16:22:32] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:2022-09-27 16:27:24,197: 172.17.0.1 - - [27/Sep/2022 16:27:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2022-09-27 16:27:24,211: 172.17.0.1 - - [27/Sep/2022 16:27:24] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:2022-09-27 16:27:24,319: 172.17.0.1 - - [27/Sep/2022 16:27:24] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:2022-09-27 16:27:26,477: 172.17.0.1 - - [27/Sep/2022 16:27:26] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:2022-09-27 16:27:26,484: 172.17.0.1 - - [27/Sep/2022 16:27:26] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2022-09-27 16:34:25,734: 172.17.0.1 - - [27/Sep/2022 16:34:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2022-09-27 16:34:25,740: 172.17.0.1 - - [27/Sep/2022 16:34:25] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2022-09-27 16:34:25,751: 172.17.0.1 - - [27/Sep/2022 16:34:25] "GET /static/css/main.css HTTP/1.1" 304 -
