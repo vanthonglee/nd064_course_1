@@ -20,7 +20,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v4
       with:
-        images: vanthonglee/techtrends
+        images: thonglevan131/techtrends
         tags: |
           type=ref,event=branch
           type=ref,event=pr
