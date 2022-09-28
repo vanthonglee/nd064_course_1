@@ -1,0 +1,9 @@
+apiVersion: v1
+name: techtrends
+description: Install tech trends application
+keywords:
+- techtrends
+version: 1.0.0
+maintainers:
+- name: georgelee
+  email: thonglevan131@gmail.com
